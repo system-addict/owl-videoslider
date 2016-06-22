@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Owl Carousel - VIDEO Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Owl Carousel Assets -->    
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700" rel="stylesheet" type="text/css">
+<link href="owl-assets/owl-css/bootstrapTheme.css" rel="stylesheet">
+<link href="owl-assets/owl-css/custom.css" rel="stylesheet">
+<link href="owl-assets/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="owl-assets/owl-carousel/owl.theme.css" rel="stylesheet">
+<link href="owl-assets/owl-js/google-code-prettify/prettify.css" rel="stylesheet"><!-- maybe can remove-->
+</head>
+<body>
+<!--
+<div class="customNavigation"><!-- CUSTOM VIDEO NAV -->
+<!--
+  <a class="btn prev"><img src="owl-assets/custom-buttons/PREV-thin.png" alt="SLIDE TO VIEW PREVIOUS ITEMS"></a>
+  <a class="btn next"><img src="owl-assets/custom-buttons/NEXT-thin.png" alt="SLIDE TO VIEW NEXT ITEMS"></a>
+</div>-->
+<div id="demo"><!-- tester -->
+<div class="container"><!-- centers slider -->
+  <div class="row">
+   <div class="span12">
+    <div id="owl-demo" class="owl-carousel">
+     <div class="item">
+      <!-- if using iframes alone set to width="100%" height="100%" -->
+      	<iframe class="video-slider-youtube" width="287" height="161"
+            	  src="https://www.youtube.com/embed/Uq5xnlB74KY?list=PLSeZ4rGQa9ttolXAkWuLM3CLARWOyaeKR" target="_blank" frameborder="0" allowfullscreen></iframe></div>
+     <div class="item">
+      	<iframe class="video-slider-youtube" width="287" height="161"
+         	     src="https://www.youtube.com/embed/e30QB9SvqIY?list=PLSeZ4rGQa9ttolXAkWuLM3CLARWOyaeKR" target="_blank" frameborder="0" allowfullscreen></iframe></div>
+     <div class="item">
+     	<a href="https://www.youtube.com/watch?v=Zi-_zeeJmdU&list=PLSeZ4rGQa9ttolXAkWuLM3CLARWOyaeKR&index=13" target="_blank">
+        	<img src="x_video-slider_img/kosc-bartok.png" alt="KOSC VIOLIN DEMO - BARTOK VIDEO LINK"></a></div>
+     <div class="item">
+     	<a href="https://www.youtube.com/watch?v=_4IEL8jYmXo&list=PLSeZ4rGQa9ttolXAkWuLM3CLARWOyaeKR&index=14" target="_blank">
+     		<img src="x_video-slider_img/kosc-franck.png" alt="KOSC VIOLIN DEMO - FRANCK VIDEO LINK"></a></div>
+     <div class="item"><img src="x_video-slider_img/kosc-bartok.png" alt="KOSC VIOLIN DEMO - BARTOK VIDEO LINK"></div>
+     <div class="item"><img src="x_video-slider_img/kosc-franck.png" alt="KOSC VIOLIN DEMO - FRANCK VIDEO LINK"></div>
+     <div class="item"><img src="x_video-slider_img/kosc-bartok-demo_top.png" alt="KOSC VIOLIN DEMO - BARTOK VIDEO LINK"></div>
+     <div class="item"><img src="x_video-slider_img/kosc-franck-demo_top.png" alt="KOSC VIOLIN DEMO - FRANCK VIDEO LINK"></div>
+
+    </div>
+     <div class="customNavigation"><!-- CUSTOM VIDEO NAV -->
+        <a class="btn prev"><img src="owl-assets/custom-buttons/PREV-thin.png" alt="SLIDE TO VIEW PREVIOUS ITEMS"></a>
+        <a class="btn next"><img src="owl-assets/custom-buttons/NEXT-thin.png" alt="SLIDE TO VIEW NEXT ITEMS"></a>
+     </div>      
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<script src="owl-assets/owl-js/jquery-1.9.1.min.js"></script> 
+<script src="owl-assets/owl-carousel/owl.carousel.js"></script>
+<!-- Demo Style-->
+
+<style>
+#owl-demo .item{
+    margin: 3px;}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;}
+
+</style>
+
+<style> 
+.customNavigation{
+  display:inline;	
+  text-align: center;
+  position:absolute;
+  top:5px;
+  height:150px !important;
+  width:inherit;
+  z-index:999;
+  }
+
+.customNavigation *{
+	height:inherit;
+	width:auto;
+	background-color:transparent;}
+.customNavigation img{
+	opacity:.8;}
+.customNavigation a:hover img{
+	opacity:1.0;}
+.customNavigation a:hover{
+	background-color:transparent;}
+.customNavigation .prev{
+	position:relative;
+	left:-45%;
+	//float:left;
+}
+.customNavigation .next{
+	position:relative;
+	right:-45%;
+	//float:right;
+}
+//use styles below to disable ugly selection
+.customNavigation a{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+</style>
+
+
+<script>
+$(document).ready(function() {
+ var vslide = $("#owl-demo");
+ vslide.owlCarousel({
+	autoPlay: false,
+	navigation: false,
+    items : 4,
+    itemsDesktop : [1199,3],
+    itemsDesktopSmall : [979,3]
+  });
+ 
+ // Custom Navigation Events
+ $(".next").click(function(){
+   $("#owl-demo").trigger('owl.next');
+ })
+ $(".prev").click(function(){
+   $("#owl-demo").trigger('owl.prev');
+ })
+ 
+});
+</script>
+
+<script src="owl-assets/owl-js/bootstrap-collapse.js"></script><!-- investigate removal removal -->
+<script src="owl-assets/owl-js/bootstrap-transition.js"></script>
+<script src="owl-assets/owl-js/bootstrap-tab.js"></script><!-- investigate removal removal -->
+<script src="owl-assets/owl-js/google-code-prettify/prettify.js"></script><!-- test removal -->
+  <script src="owl-assets/owl-js/application.js"></script><!-- investigate removal removal -->
+
+</body>
+</html>
