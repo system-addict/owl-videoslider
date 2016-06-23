@@ -19,48 +19,75 @@
   <a class="btn prev"><img src="owl-assets/custom-buttons/PREV-thin.png" alt="SLIDE TO VIEW PREVIOUS ITEMS"></a>
   <a class="btn next"><img src="owl-assets/custom-buttons/NEXT-thin.png" alt="SLIDE TO VIEW NEXT ITEMS"></a>
 </div>-->
+<div><p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></p></div>
+
 <div id="demo"><!-- tester -->
 <div class="container"><!-- centers slider -->
   <div class="row">
    <div class="span12">
-    <div id="owl-demo" class="owl-carousel">
+   	<!--<ul>
+     <li>-->
+     <div class="customNavigation customNav-prev"><!-- CUSTOM VIDEO NAV -->
+      <a class="btn prev"><img src="owl-assets/custom-buttons/PREV-thin.png" alt="SLIDE TO VIEW PREVIOUS ITEMS"></a>
+     </div><!--</li>
+
+    <li>--><div id="owl-demo" class="owl-carousel">
+<!--     <div class="item-video" data-merge="1" style="height:300px !important;"><a class="owl-video" href="https://www.youtube.com/watch?v=UZ83jDVgIO4" target="_blank"></a></div> -->
      <div class="item">
       <!-- if using iframes alone set to width="100%" height="100%" -->
-      	<iframe class="video-slider-youtube" width="287" height="161"
+<!--      	<iframe class="video-slider-youtube" width="287" height="161"-->
+	      	<iframe class="video-slider-youtube" width="100%" height="161.438px"
             	  src="https://www.youtube.com/embed/Uq5xnlB74KY?list=PLSeZ4rGQa9ttolXAkWuLM3CLARWOyaeKR" target="_blank" frameborder="0" allowfullscreen></iframe></div>
      <div class="item">
-      	<iframe class="video-slider-youtube" width="287" height="161"
+<!--      	<iframe class="video-slider-youtube" width="287" height="161"-->
+	      	<iframe class="video-slider-youtube" width="100%" height="161.438px"
          	     src="https://www.youtube.com/embed/e30QB9SvqIY?list=PLSeZ4rGQa9ttolXAkWuLM3CLARWOyaeKR" target="_blank" frameborder="0" allowfullscreen></iframe></div>
      <div class="item">
      	<a href="https://www.youtube.com/watch?v=Zi-_zeeJmdU&list=PLSeZ4rGQa9ttolXAkWuLM3CLARWOyaeKR&index=13" target="_blank">
-        	<img src="x_video-slider_img/kosc-bartok.png" alt="KOSC VIOLIN DEMO - BARTOK VIDEO LINK"></a></div>
+        	<img src="video-slider_img/kosc-bartok.png" alt="KOSC VIOLIN DEMO - BARTOK VIDEO LINK"></a></div>
      <div class="item">
      	<a href="https://www.youtube.com/watch?v=_4IEL8jYmXo&list=PLSeZ4rGQa9ttolXAkWuLM3CLARWOyaeKR&index=14" target="_blank">
-     		<img src="x_video-slider_img/kosc-franck.png" alt="KOSC VIOLIN DEMO - FRANCK VIDEO LINK"></a></div>
-     <div class="item"><img src="x_video-slider_img/kosc-bartok.png" alt="KOSC VIOLIN DEMO - BARTOK VIDEO LINK"></div>
-     <div class="item"><img src="x_video-slider_img/kosc-franck.png" alt="KOSC VIOLIN DEMO - FRANCK VIDEO LINK"></div>
-     <div class="item"><img src="x_video-slider_img/kosc-bartok-demo_top.png" alt="KOSC VIOLIN DEMO - BARTOK VIDEO LINK"></div>
-     <div class="item"><img src="x_video-slider_img/kosc-franck-demo_top.png" alt="KOSC VIOLIN DEMO - FRANCK VIDEO LINK"></div>
+     		<img src="video-slider_img/kosc-franck.png" alt="KOSC VIOLIN DEMO - FRANCK VIDEO LINK"></a></div>
+     <div class="item"><img src="video-slider_img/kosc-bartok.png" alt="KOSC VIOLIN DEMO - BARTOK VIDEO LINK"></div>
+     <div class="item"><img src="video-slider_img/kosc-franck.png" alt="KOSC VIOLIN DEMO - FRANCK VIDEO LINK"></div>
+     <div class="item"><img src="video-slider_img/kosc-bartok-demo_top.png" alt="KOSC VIOLIN DEMO - BARTOK VIDEO LINK"></div>
+     <div class="item"><img src="video-slider_img/kosc-franck-demo_top.png" alt="KOSC VIOLIN DEMO - FRANCK VIDEO LINK"></div>
 
-    </div>
-     <div class="customNavigation"><!-- CUSTOM VIDEO NAV -->
-        <a class="btn prev"><img src="owl-assets/custom-buttons/PREV-thin.png" alt="SLIDE TO VIEW PREVIOUS ITEMS"></a>
+    </div><!--</li>
+     <li>--><div class="customNavigation customNav-next"><!-- CUSTOM VIDEO NAV -->
         <a class="btn next"><img src="owl-assets/custom-buttons/NEXT-thin.png" alt="SLIDE TO VIEW NEXT ITEMS"></a>
-     </div>      
+     </div>      <!--</li>-->
     </div>
   </div>
 </div>
 </div>
-
-
+<div class="carousel_selector">
+    <a href="" data-to="0">0</a>
+</div>
+<div class="carousel__selector">
+    <a href="" data-t="1">1</a>
+</div>
+<div class="carousel_selector">
+    <a href="" data-to="2">3</a>
+</div>
+<div class="carousel_selector">
+    <a href="" data-to="3">4</a>
+</div>
+<div><p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></p></div>
 
 <script src="owl-assets/owl-js/jquery-1.9.1.min.js"></script> 
 <script src="owl-assets/owl-carousel/owl.carousel.js"></script>
 <!-- Demo Style-->
 
 <style>
-#owl-demo .item{
+/*.owl-controls*/
+/*.owl-pagination{
+	display:none !important;}*/	
+#demo{max-width:inherit;}
+#owl-demo .item/*, #owl-demo .item-video*/{
     margin: 3px;}
+/*#owl-demo .item-video{
+	height:100% !important; }*/
 #owl-demo .item img{
     display: block;
     width: 100%;
@@ -69,13 +96,17 @@
 </style>
 
 <style> 
+/*#demo ul{
+	list-style-type:none;}
+#demo ul li{display:inline !important;}*/
+#owl-demo{width:100% !important;}
 .customNavigation{
-  display:inline;	
+/*  display:inline-block;	*/
   text-align: center;
-  position:absolute;
-  top:5px;
+  position:relative;
+/*  top:5px;*/
   height:150px !important;
-  width:inherit;
+  width:auto;
   z-index:999;
   }
 
@@ -84,22 +115,26 @@
 	width:auto;
 	background-color:transparent;}
 .customNavigation img{
-	opacity:.8;}
+	opacity:.6;}
 .customNavigation a:hover img{
 	opacity:1.0;}
 .customNavigation a:hover{
 	background-color:transparent;}
-.customNavigation .prev{
-	position:relative;
-	left:-45%;
-	//float:left;
+
+/*.customNavigation .prev{*/
+.customNav-prev{
+	left:-585px;
+	bottom:-156px;/*CENTER -148px; = +8*/
+
 }
-.customNavigation .next{
-	position:relative;
-	right:-45%;
-	//float:right;
+/*.customNavigation .next{*/
+.customNav-next{/*cannot use float because of resizing issue*/
+	right:-585px;/*CENTER-12px;*/
+//	top:-204px; /*CENTER-212px;*/
+	bottom:156px;
 }
-//use styles below to disable ugly selection
+
+/*use styles below to disable ugly selection*/
 .customNavigation a{
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -113,23 +148,112 @@
 
 <script>
 $(document).ready(function() {
- var vslide = $("#owl-demo");
+	var vslide = $("#owl-demo");
  vslide.owlCarousel({
-	autoPlay: false,
+	/*video:true,*/
+	responsive: false,
+//	autoPlay: false, NORMALLY CORRECT
+// OPTIONS FOR HOVER MOUSE
+autoPlay: false,
+autoplayHoverPause: false,
+//autoplayTimeout: 1000,
+//autoplaySpeed: 500,
+//navSpeed:,
+//smartSpeed:10000,
+loop: true,
+//end HOVER
+
 	navigation: false,
     items : 4,
     itemsDesktop : [1199,3],
-    itemsDesktopSmall : [979,3]
+    itemsDesktopSmall : [979,3],
+// RESPONSIVE
+/* responsiveClass:true,
+    responsive:{
+        0:   {items:4,},
+        600: {items:4,},
+        1000:{items:4,}
+    }*/	
+	
   });
- 
+// $('.owl-carousel').owlCarousel({
+//   onInitialize:  $("#owl-demo").trigger('autoplay.stop.owl')//callback
+//});
+/*function callback(){
+ $("#owl-demo").trigger('stop.owl.autoplay');
+}*/
+/* $("#owl-demo").owlCarousel({onInitialized(function(){
+	 'stop.owl.autoplay'
+});
+ */
  // Custom Navigation Events
+////  $(".next").mouseover(function(){
+////if ( /*this.owl.currentItem*/ $('.owl-carousel .owl-item.active') != ( /*this.owl.owlItems.length*/ $('.item').length -4 ) ){ /*length-visible has to be manual*/
+////	for(i=0;i<3;i++){
+	//while(this.isInitalized){ i=1;
+////		(function(i){
+////        	setTimeout(function(){
+////				$("#owl-demo").trigger('owl.next');
+////        	}, 500 * i);
+////    	}(i));
+////	}//end for
+////	}//end if
+////  })
+
+//	  alert("please stop!");
+//   $("#owl-demo").owlCarousel({
+//   $("#owl-demo").trigger(
+//  autoplay: true	   
+//	'play.owl.autoplay'
+//'play.autoplay.owl'	
+//		'autoplay.play.owl'
+//	'owl.autoplay.play'
+//);
+   //.trigger('autoplay.play.owl',1);
+   							/*'owl.next'*/
+							//'play.owl.autoplay');
+// })
  $(".next").click(function(){
    $("#owl-demo").trigger('owl.next');
  })
+//// $(".prev").mouseover(function(){
+////if (/*this.owl.currentItem*/ $('.owl-carousel .owl-item.active') != 0 ){ 
+////	for(i=0;i<3;i++){
+////		(function(i){
+////        	setTimeout(function(){
+//				$("#owl-demo").trigger('owl.prev');
+////        	}, 200 * i);
+////    	}(i));
+////		$("#owl-demo").trigger('owl.prev');
+////	}//end for
+////}//end if
+////  })
  $(".prev").click(function(){
    $("#owl-demo").trigger('owl.prev');
  })
- 
+//$(.play).on('hover')
+//BEGIN HOVER
+/* var carousel = $("#owl-demo");
+$('.carousel_selector a').mouseover(function (e){
+    $("#owl-demo").trigger('owl.next'
+	//'stop.owl.autoplay'
+	);
+});
+*/
+/* ATTEMPT EXTERNAL CONTROLER
+$('.carousel_selector a').on('mouseleave', function (e){
+    $("#owl-demo").trigger('owl.next'
+	//'play.owl.autoplay'
+	);
+});
+
+$('.carousel_selector a').on('click', function (e){
+//    e.preventDefault();
+    var slideTo = $(this).data('to');
+    $("#owl-demo").trigger('to.owl.carousel', [slideTo]);
+    $("#owl-demo").trigger('stop.owl.autoplay');
+});*/
+//END HOVER
 });
 </script>
 
